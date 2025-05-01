@@ -1,12 +1,33 @@
-# React + Vite
+# React Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based quiz application designed to test your React knowledge. The app features multiple-choice questions, a countdown timer, and a high score tracker.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multiple-choice questions with 4 options each  
+- Timer for each question  
+- Score tracking with high score display  
+- Easy addition of new questions via JSON file  
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow the steps below to get the app up and running locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/react-quiz-app.git
+cd react-quiz-app
+2. Install Dependencies
+npm install
+3. Start the Backend (Questions API)
+To serve the questions from questions.json, run:
+
+npm run server
+This will start a local JSON server on http://localhost:3001.
+
+### 1. Clone the Repository
+
+```bash
+npm run dev
+This will launch the React development server (typically at http://localhost:5173 if using Vite).
