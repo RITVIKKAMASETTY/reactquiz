@@ -1,11 +1,12 @@
 import React from 'react'
-
-export default function Progress({index,numquestions,points,maxpoints,answer}) {
+import { useQuiz,Quizcontext } from '../components/context/Quizcontext'
+export default function Progress() {
+  const {index,answer,points,numquestion,maxpoint}=useQuiz();
   return (
  <header className="progress">
-  <progress max={numquestions} value={index+Number(answer!=null)}></progress> {/*Number(false)==0 and Number(true)==1 */}
-    <p>Question<strong>{index+1}</strong>/{numquestions}</p>
-    <p><strong>{points}</strong>/{maxpoints}</p>
+  <progress max={numquestion} value={index+Number(answer!=null)}></progress> {/*Number(false)==0 and Number(true)==1 */}
+    <p>Question<strong>{index+1}</strong>/{numquestion}</p>
+    <p><strong>{points}</strong>/{maxpoint}</p>
  </header>
   )
 }
